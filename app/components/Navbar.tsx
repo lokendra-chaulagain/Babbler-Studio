@@ -1,5 +1,4 @@
 "use client";
-
 import ContactIcon from "./icons/ContactIcon";
 import HomeIcon from "./icons/HomeIcon";
 import MenuIcon from "./icons/MenuIcon";
@@ -42,7 +41,7 @@ export default function Navbar() {
       <div className=" fixed lg:w-7/12 hidden md:block  ">
         <div className="flex gap-20 ">
           {navLists.map((item, index) => (
-            <div className=" flex items-center gap-1 cursor-pointer   text-gray-300">
+            <div key={item.id} className=" flex items-center gap-1 cursor-pointer   text-gray-300">
               {item.icon}
               <span className=" text-lg font-medium"> {item.label}</span>
             </div>
