@@ -7,3 +7,31 @@ body {
   padding-right: 7px;
   background-color: #000001;
 }
+
+.span-small {
+  font-size: 1.5rem;
+  margin-right: 16px;
+  color: transparent;
+  text-shadow: white;
+  -webkit-text-stroke: 0.8px white;
+}
+
+.span-large {
+  font-size: 2.5rem;
+  margin-right: 16px;
+  color: transparent;
+  text-shadow: white;
+  -webkit-text-stroke: 0.8px white;
+}
+
+.mobileMenuVisible {
+  top: 0;
+  opacity: 1;
+  transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+.mobileMenuHidden {
+  top: -100%;
+  opacity: 0;
+  transition: top 0.5s ease, opacity 0.5s ease;
+}
