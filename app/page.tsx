@@ -6,7 +6,6 @@ export default function Home() {
     <main className=" bg-primary min-h-screen">
       <Navbar />
       <HeroSection />
-     
     </main>
   );
 }

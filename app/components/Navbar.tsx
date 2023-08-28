@@ -69,7 +69,7 @@ export default function Navbar() {
       <div className={`fixed  mobileMenuVisible  w-full bg-primary  py-7 block md:hidden  ${openMenu ? "mobileMenuVisible" : "mobileMenuHidden"}`}>
         <div className="flex flex-col gap-5 ">
           {navLists.map((item: any, index) => (
-            <span className=" cursor-pointer">
+            <span key={item.id} className=" cursor-pointer">
               <span className="span-small">0{index + 1}</span> <span className="span-large">{item.label}</span>
             </span>
           ))}
