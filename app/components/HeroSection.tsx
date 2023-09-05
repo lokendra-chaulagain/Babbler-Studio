@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import logo from "../../public/logo.png";
-import right from "../../public/right-side.png";
 import ArrowRightIcon from "./icons/ArrowRightIcon";
 
 export default function HeroSection() {
@@ -30,12 +29,11 @@ export default function HeroSection() {
         </div>
 
         <div>
-
-          
-          {/* <Image
-            src={right}
+          <Image
+            src={logo}
             alt="image"
-          /> */}
+            className=""
+          />
         </div>
       </div>
     </div>
