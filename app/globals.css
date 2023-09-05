@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  padding-left: 7px;
-  padding-right: 7px;
+/* body {
   background-color: #000001;
+} */
+
+/* body {
+  background: linear-gradient(to right, #000001, white) !important;
+} */
+
+
+body {
+  background: linear-gradient(to right bottom, #000001, #000001  ,#000001 ,#000001a9) !important;
 }
+
+
+
+
 
 .span-small {
   font-size: 1.5rem;

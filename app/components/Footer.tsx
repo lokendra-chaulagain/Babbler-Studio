@@ -49,15 +49,15 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="flex justify-center mt-20 text-gray-200">
-      <div className="w-7/12 ">
-        <div className="flex ">
-          <div className="w-full pr-20 ">
+    <footer className=" mt-40 text-gray-200">
+      <div className="">
+        <div className="flex flex-col md:flex-row ">
+          <div className="w-full md:pr-10 ">
             <p className=" text-4xl font-semibold">Babbler Studio</p>
             <p className="leading-relaxed mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad earum asperiores perferendis voluptatum. Velit tenetur ut rem unde distinctio minima officia recusandae inventore dolore, harum placeat.</p>
           </div>
 
-          <div className="w-full flex justify-between">
+          <div className="w-full flex flex-col sm:flex-row gap-12 sm:gap-0 justify-between mt-10 md:mt-0">
             {footerNavs.map((item, index) => (
               <ul
                 className="space-y-4"
@@ -78,10 +78,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr className=" opacity-10 mt-10 mb-5" />
-        <div className="flex items-center justify-between   pb-5">
-          <div className=" text-sm">&copy; 2023 Babbler Studio All rights reserved.</div>
-          <ul className=" flex items-center gap-3">
+        <hr className=" opacity-10 mt-12 mb-5" />
+        <div className="flex flex-col sm:flex-row gap-5 sm:gap-0 order items-center justify-between   pb-5">
+          <div className=" text-sm order-2 sm:order-1">&copy; 2023 Babbler Studio All rights reserved.</div>
+          <ul className=" flex items-center gap-3 order-1 sm:order-2">
             <li className="w-8 h-8 border rounded-full flex items-center justify-center">
               <a href="/">
                 <WhatsAppIcon />

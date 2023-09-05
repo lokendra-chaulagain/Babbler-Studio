@@ -46,8 +46,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex justify-end md:justify-center py-5">
-        <div className=" fixed lg:w-7/12 hidden md:block  ">
+      <div className="flex ">
+        <div className=" fixed top-0  hidden md:block  py-5 ">
           <div className="flex gap-20 ">
             {navLists.map((item, index) => (
               <div
@@ -59,14 +59,17 @@ export default function Navbar() {
             ))}
           </div>
         </div>
+
+        <div className=" flex justify-start">
         <div
           onClick={handleToggle}
-          className=" z-50 text-white block md:hidden">
+          className=" z-50 fixed  top-0 right-0 py-5 px-2 text-white block md:hidden">
           {openMenu ? <CloseIcon /> : <MenuIcon />}
+        </div>
         </div>
       </div>
 
-      <div className={`fixed  mobileMenuVisible  w-full bg-primary  py-7 block md:hidden  ${openMenu ? "mobileMenuVisible" : "mobileMenuHidden"}`}>
+      <div className={`fixed  mobileMenuVisible  w-full bg-primary  block md:hidden  ${openMenu ? "mobileMenuVisible" : "mobileMenuHidden"}`}>
         <div className="flex flex-col gap-5 ">
           {navLists.map((item: any, index) => (
             <span key={item.id} className=" cursor-pointer">
