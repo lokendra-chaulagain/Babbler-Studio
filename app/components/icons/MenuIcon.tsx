@@ -5,7 +5,7 @@ export default function MenuIcon() {
     <svg
       viewBox="0 0 512 512"
       fill="currentColor"
-      className="h-8 w-8">
+      className="h-10 w-10">
       <path
         fill="none"
         stroke="currentColor"

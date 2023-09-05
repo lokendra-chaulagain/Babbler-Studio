@@ -46,12 +46,12 @@ export default function TestimonialSection() {
         />
       </section> */}
 
-      <div className=" grid grid-1 md:grid-cols-2 gap-5 lg:gap-10 xl:gap-16">
+      <div className=" grid grid-1 md:grid-cols-2 gap-16 lg:gap-10 xl:gap-16">
         {testimonials.map((item: any, index: any) => (
           <div
             key={item.id}
-            className=" flex flex-col gap-2 justify-center items-center border rounded-md border-neutral-800 border-opacity-60 p-3">
-            <p className="text-center tracking-wider">{item.content}</p>
+            className=" flex flex-col gap-2 justify-center items-center md:border md:rounded-md md:border-neutral-800 md:border-opacity-60 md:p-3">
+            <q className="text-center tracking-wider">{item.content}</q>
             <p className=" text-2xl">{item.nameAndPosition}</p>
             <p className=" text-lg font-sans">{item.company}</p>
           </div>

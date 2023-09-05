@@ -63,13 +63,13 @@ export default function Navbar() {
         <div className=" flex justify-start">
         <div
           onClick={handleToggle}
-          className=" z-50 fixed  top-0 right-0 py-5 px-2 text-white block md:hidden">
+          className=" z-50 fixed  top-0 right-0 py-5 px-4 text-white block md:hidden">
           {openMenu ? <CloseIcon /> : <MenuIcon />}
         </div>
         </div>
       </div>
-
-      <div className={`fixed  mobileMenuVisible  w-full bg-primary  block md:hidden  ${openMenu ? "mobileMenuVisible" : "mobileMenuHidden"}`}>
+ 
+      <div className={`fixed py-5  mobileMenuVisible  w-full bg-primary z-40  block md:hidden  ${openMenu ? "mobileMenuVisible" : "mobileMenuHidden"}`}>
         <div className="flex flex-col gap-5 ">
           {navLists.map((item: any, index) => (
             <span key={item.id} className=" cursor-pointer">
