@@ -43,7 +43,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <div className=" flex justify-center">
-      <div className="embla w-5/12 px-10 text-white">
+      <div className="embla w-5/12 px-10 text-gray-300">
         <div
           className="embla__viewport"
           ref={emblaRef}>

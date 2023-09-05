@@ -61,12 +61,10 @@
 // }
 
 "use client";
-import ArrowRight from "./icons/ArrowRight";
-import SendIcon from "./icons/SendIcon";
 
 export default function AboutSection() {
   return (
-    <section className="flex justify-center  text-gray-200">
+    <section id="about" className="flex justify-center  text-gray-300">
       <div className=" flex flex-col gap-7 items-center justify-between ">
         {/* <p className=" px-3 py-1 bg-neutral-700 rounded-full text-sm flex items-center gap-2 cursor-pointer">
           🎉 157+ Satisfied Customer in th community <ArrowRight />
@@ -89,9 +87,7 @@ export default function AboutSection() {
             </div>
 
             <div className=" flex flex-col  ">
-              <p className="tracking-wider ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore   autem beatae doloremque harum excepturi suscipit dicta rerum nulla quasi vero dolore saepe natus, maiores placeat voluptates laboriosam voluptatibus! Quos ut voluptatibus optio illum ipsum temporibus, beatae maxime delectus incidunt non repudiandae, et quae dicta cupiditate tempore nostrum consectetur rerum, id aliquid aperiam.
-              </p>
+              <p className="tracking-wider ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore autem beatae doloremque harum excepturi suscipit dicta rerum nulla quasi vero dolore saepe natus, maiores placeat voluptates laboriosam voluptatibus! Quos ut voluptatibus optio illum ipsum temporibus, beatae maxime delectus incidunt non repudiandae, et quae dicta cupiditate tempore nostrum consectetur rerum, id aliquid aperiam.</p>
             </div>
 
             <div className="w-full flex  items-center justify-between">

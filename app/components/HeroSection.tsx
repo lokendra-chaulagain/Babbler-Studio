@@ -5,7 +5,7 @@ import ArrowRightIcon from "./icons/ArrowRightIcon";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen pt-24  md:pt-48">
+    <div id="home" className="min-h-screen pt-24  md:pt-48">
       <div className="flex flex-col md:flex-row order items-center justify-between  ">
         <div className="flex flex-col md:-8/12 order-2 md:order-1">
           <div className="flex flex-col text-center md:text-left">

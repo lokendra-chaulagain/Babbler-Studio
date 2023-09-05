@@ -5,6 +5,7 @@ import LocationIcon from "./icons/LocationIcon";
 import MailIcon from "./icons/MailIcon";
 import PhoneIcon from "./icons/PhoneIcon";
 import WhatsAppIcon from "./icons/WhatsAppIcon";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Footer() {
   const footerNavs = [
@@ -12,17 +13,20 @@ export default function Footer() {
       label: "Company",
       items: [
         {
-          href: "/",
+          href: "#about",
           name: "About",
+          offset:"70"
         },
         {
-          href: "/",
+          href: "#testimonials",
           name: "Testimonial",
+          offset:"70"
         },
 
         {
-          href: "/",
-          name: "Careers",
+          href: "#contact",
+          name: "Contact",
+          offset:"70"
         },
       ],
     },
@@ -49,7 +53,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className=" mt-40 text-gray-200">
+    <footer className=" mt-40 text-gray-300">
       <div className="">
         <div className="flex flex-col md:flex-row ">
           <div className="w-full md:pr-10 ">
@@ -65,12 +69,13 @@ export default function Footer() {
                 <h4 className="font-medium text-xl ">{item.label}</h4>
                 {item.items.map((item: any, index: number) => (
                   <li key={index}>
-                    <a
+                    <AnchorLink
                       href={item.href}
+                      offset={item.offset}
                       className="hover:underline  flex items-center gap-1 ">
                       {item.icon}
                       {item.name}
-                    </a>
+                    </AnchorLink>
                   </li>
                 ))}
               </ul>
