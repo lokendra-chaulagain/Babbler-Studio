@@ -2,10 +2,13 @@
 import Image from "next/image";
 import logo from "../../public/logo.png";
 import ArrowRightIcon from "./icons/ArrowRightIcon";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function HeroSection() {
   return (
-    <div id="home" className="min-h-screen pt-24  md:pt-48">
+    <div
+      id="home"
+      className="min-h-screen pt-24  md:pt-48">
       <div className="flex flex-col md:flex-row order items-center justify-between  ">
         <div className="flex flex-col md:-8/12 order-2 md:order-1">
           <div className="flex flex-col text-center md:text-left">
@@ -14,9 +17,12 @@ export default function HeroSection() {
           </div>
 
           <div className="absolute bottom-10  ">
-            <span className="text-gray-300 flex items-center gap-2 cursor-pointer">
+            <AnchorLink
+              href="#contact"
+              offset="70"
+              className="text-gray-300 flex items-center gap-2 cursor-pointer">
               Connect With Us <ArrowRightIcon />
-            </span>
+            </AnchorLink>
           </div>
         </div>
 

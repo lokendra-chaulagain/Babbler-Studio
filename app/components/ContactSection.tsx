@@ -7,7 +7,7 @@ import PhoneIcon from "./icons/PhoneIcon";
 export default function ContactSection() {
   return (
     <section id="contact" className="text-gray-300 mt-32 md:mt-40">
-      <p className=" text-4xl font-medium  text-center mb-7">Lets Get connected.</p>
+      <p className=" text-4xl font-medium  text-center mb-7">Contact Us</p>
       <div className="flex flex-col md:flex-row mt-12 md:mt-0 ">
         <div className="w-full  flex flex-col gap-5 md:gap-0 justify-between">
           <div className="flex items-center gap-3">
