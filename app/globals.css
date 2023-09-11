@@ -2,22 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
+body {
   background-color: #000001;
-} */
+}
 
 /* body {
   background: linear-gradient(to right, #000001, white) !important;
 } */
 
-
-body {
+/* body {
   background: linear-gradient(to right bottom, #000001, #000001  ,#000001 ,#000001a9) !important;
-}
-
-
-
-
+} */
 
 .span-small {
   font-size: 1.5rem;
@@ -180,19 +175,18 @@ body {
   background: linear-gradient(45deg, var(--brand-primary), var(--brand-secondary));
 }
 
-
-.rotate_icon_top{
+.rotate_icon_top {
   transform: rotate(270deg);
   position: absolute;
- position: center;
- margin-top: -15px;
- margin-left: -10px;
+  position: center;
+  margin-top: -15px;
+  margin-left: -10px;
 }
 
-.rotate_icon_bottom{
+.rotate_icon_bottom {
   transform: rotate(270deg);
   position: absolute;
- position: center;
- margin-top: -15px;
- margin-left: -10px;
+  position: center;
+  margin-top: -15px;
+  margin-left: -10px;
 }
