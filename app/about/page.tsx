@@ -22,6 +22,7 @@ export default function Home() {
           <div className="flex items-center gap-6">
             {lists.map((item: any, index: any) => (
               <p
+              key={index}
                 onClick={() => {
                   setSelectedItem(item.label), setIndex(index);
                 }}
