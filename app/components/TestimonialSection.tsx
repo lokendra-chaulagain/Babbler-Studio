@@ -37,7 +37,7 @@ export default function TestimonialSection() {
     },
   ];
   return (
-    <div id="testimonials" className="text-gray-300 mt-32 md:mt-40">
+    <div id="testimonials" className="text-gray-300 mt-12 pb-12">
       <p className=" text-4xl font-medium  text-center mb-10">Testimonials</p>
       {/* <section className="">
         <EmblaCarousel

@@ -34,14 +34,14 @@ export default function Navbar() {
       id: 3,
       icon: <TestimonialIcon />,
       label: "Testimonials",
-      href: "/",
+      href: "/testimonials",
     },
 
     {
       id: 4,
       icon: <ContactIcon />,
       label: "Contact",
-      href: "/",
+      href: "/contact",
     },
   ];
 
